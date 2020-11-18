@@ -1,0 +1,348 @@
+
+/* Global Css */
+:root {
+
+    --text-color-pink: #E300F5;
+    --text-color-green: #00D699;
+    --text-color-white: #EAEAEA;
+    --grid-bgColor: #2E2E2E;
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color-white);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-weight: 300;
+    height: auto;
+    background: #2B2B2B;
+    scroll-behavior: smooth;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+
+span{
+    display: block;
+    margin: 0 auto;
+}
+section{
+    border: 20px solid transparent;
+}
+.customHeadin h2{
+    color: var(--text-color-green);
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.highLight{
+    color: var(--text-color-green);
+    font-weight: 400;
+}
+.customBorder{
+    width: 100% !important;
+    height: 1px;
+    background: #7c7c7c;
+    margin: 10px 0px !important;
+    
+}
+
+/* Banner Section Start */
+.headerSection{
+    border: 0px !important;
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#222222), to(#2B2B2B));
+    background: transparent -o-linear-gradient(top, #222222 0%, #2B2B2B 100%);
+    background: transparent linear-gradient(180deg, #222222 0%, #2B2B2B 100%);
+   
+}
+.headerInnerSection{
+width: 100%;
+background:url('img/banner.png');
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+min-height: 100vh;
+padding-bottom: 20px;
+
+}
+.custom-nav{
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#C500FF), to(#AA16FF));
+    background: transparent -o-linear-gradient(top, #C500FF 0%, #AA16FF 100%);
+    background: transparent linear-gradient(180deg, #C500FF 0%, #AA16FF 100%);
+}
+.custom-nav ul{
+    color: #1B1B1B;
+}
+.custom-nav ul li{
+    color: #1B1B1B;
+}
+.custom-nav ul li a{
+    color: #1B1B1B;
+    border-right: 1px solid #1B1B1B;
+    font-weight: semi-bold;
+    font-size: 15px;
+    padding: 5px 40px !important;
+}
+.custom-nav ul li:last-child a{
+    border-right: 0px solid #1B1B1B;
+}
+.custom-nav ul li a{
+    color: #1B1B1B;
+    font-weight: 400;
+}
+.navbar-toggler .fa-bars{
+    font-size: 30px !important;
+    font-weight: 100;
+}
+.head-content{
+    width: 100%;
+    height: 100%;
+}
+.bannerTopHeading h2{
+    margin-top: 50px;
+    color: var(--text-color-pink);
+    font-weight: 900;
+}
+.bannerTopHeading h1{
+    color: var(--text-color-green);
+    font-size: 80px;
+    font-weight: 900;
+}
+.bannerGoIcon{
+    width: 31px;
+    height: 51px;
+    border: 3px solid #FFFFFF;
+    border-radius: 23px;
+opacity: 1;
+margin: 50px auto;
+overflow: hidden;
+}
+.bannerGoIcon i{
+    height: 25px;
+    width: 25px;
+    color: #FFFFFF;
+    -webkit-animation-name: goIcon;
+            animation-name: goIcon;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    font-weight: 100;
+}
+
+  
+  @-webkit-keyframes goIcon {
+    0%   {margin-top: -10px;}
+    50% {margin-top:30px;}
+  }
+
+  
+  @keyframes goIcon {
+    0%   {margin-top: -10px;}
+    50% {margin-top:30px;}
+  }
+.bannerBottomHeading h2{
+    margin-top: 50px;
+    color: var(--text-color-green);
+    font-weight: 900;
+}
+.bannerIconSec{
+   
+}
+.bannerIconSec h4{
+    color: var(--text-color-white);
+    font-weight: 700;
+}
+.bannerIcon{
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    border-radius: 50%;
+    background: transparent -o-linear-gradient(320deg, #008C64 0%, #16FFBC 100%);
+    background: transparent linear-gradient(130deg, #008C64 0%, #16FFBC 100%);
+-webkit-box-shadow: 0px 0px 25px #00FFA240;
+        box-shadow: 0px 0px 25px #00FFA240;
+}
+
+/* Top List Section Start */
+.topList{
+    
+}
+
+ .TopListRatting{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 40px;
+    height: 38px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#C500FF), to(#AA16FF));
+    background: transparent -o-linear-gradient(top, #C500FF 0%, #AA16FF 100%);
+    background: transparent linear-gradient(180deg, #C500FF 0%, #AA16FF 100%);
+    z-index: 9999;
+}
+.topListContent{
+    background:var(--grid-bgColor);
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    padding-bottom: 4px;
+    }
+.topListContent .topListButton{
+    width: 139px;
+height: 39px;
+line-height: 39px;
+    background: transparent -webkit-gradient(linear, left top, right top, from(#C500FF), to(#AA16FF));
+    background: transparent -o-linear-gradient(left, #C500FF 0%, #AA16FF 100%);
+    background: transparent linear-gradient(90deg, #C500FF 0%, #AA16FF 100%);
+-webkit-box-shadow: 0px 0px 15px #CC00FFB3;
+        box-shadow: 0px 0px 15px #CC00FFB3;
+border-radius: 25px;
+display: block;
+border: 0px solid transparent;
+color: var(--text-color-white);
+margin:5px auto;
+}
+
+.topListTag{
+  
+   width: 100%;
+}
+
+.topListTag a{
+    background: var(--text-color-green);
+    color: #2E2E2E;
+    display: inline-block !important;
+    font-size: 12px;
+    padding: 5px 8px;
+    padding-bottom: 3px !important;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Info Section Start */
+
+.info{}
+.info p, i, li, span{
+    font-size: 14px !important;
+}
+
+.infoPart{
+    background:var(--grid-bgColor);
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding-bottom: 4px;
+}
+.infoPart img{
+    padding: 25px 0px 15px 0px;
+    width: 100px;
+    height: 100px;
+
+}
+.infoWebLink{
+    position: relative;
+    width: 100%;
+    
+}
+
+.infoWebLink::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   top: 12px;
+   left: 0px;
+   height: 1px;
+   background: #7c7c7c;
+   z-index: 1;
+
+}
+.infoWebLink a{
+    position: relative;
+    color: var(--text-color-white);
+    border: 1px solid #7c7c7c;
+    padding: 4px 8px;
+    border-radius: 40px;
+    background:var(--grid-bgColor);
+    z-index: 9999;
+ }
+.infoTop p{
+    padding: 10px 15px 0px 15px;
+    font-size: 14px !important;
+    min-height: 170px;
+}
+.infoTop span{
+    padding:0px 15px;
+}
+.infoTop .highLight{
+    padding-bottom: 8px;
+}
+.listStyleDot{
+    padding-left: 15px !important;
+    margin-left: 15px;
+    min-height: 70px;
+}
+.availableGame{
+    min-height: 140px;
+}
+.listStyleStart{
+    padding-left: 15px !important;
+    margin-left: 0px;
+}
+.listStyleStart li{
+    list-style: none;
+}
+.listStyleStart li i{
+    margin-right: 6px;
+}
+.disadvantage{
+    height: 45px;
+}
+.disadvantage span{
+    margin-left: 25px;
+    color: #F03A17;
+}
+/* Footer Section Start */
+.footerContact{}
+.footerContact h1{
+    font-size: 60px;
+    font-weight: 300;
+    color: var(--text-color-green)
+}
+.footerContact h3{
+    color: var(--text-color-pink)
+}
+.footerBoder{
+height: 26px;
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#008C64), to(#16FFBC));
+    background: transparent -o-linear-gradient(top, #008C64 0%, #16FFBC 100%);
+    background: transparent linear-gradient(180deg, #008C64 0%, #16FFBC 100%);
+}
+
+/* Css For Responsive */
+
+@media (max-width: 768px){
+    h1{
+        font-size: 40px !important;
+    }
+    .custom-nav ul li a{
+        border-right: 0px solid #1B1B1B !important;
+        padding: 10px 0px !important;
+    }
+    
+}
+@media (max-width: 575px){
+    h1{
+        font-size: 30px !important;
+    }
+    h2, h3{
+        font-size: 22px !important;
+    }
+    
+}
